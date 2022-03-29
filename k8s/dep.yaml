@@ -1,9 +1,9 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Deploymm
 metadata:
   name: website-deploy
 spec:
-  replicas: 
+  replicas: 5
   selector:
     matchLabels:
       app: website
