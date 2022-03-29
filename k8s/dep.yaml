@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Deployme
+kind: Deployment
 metadata:
   name: website-deploy
 spec:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: mypodinfo
-        image: stefanprodan/podinfo:5.2.0
+        image: sterodan/podinfo:5.2.0
         ports:
         - containerPort: 9898
